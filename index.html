@@ -20,16 +20,28 @@
               <div class="collapse navbar-collapse" id="navbarNav">
                   <ul class="navbar-nav">
                       <li class="nav-item">
-                          <a class="nav-link" aria-current="page" href="#">Casa</a>
+                          <a class="nav-link" href="#">Dashboard</a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link" href="#">Caratteristiche</a>
+                          <a class="nav-link" href="piani-di-sponsorizzazione.html">Sponsorizzazione</a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link" href="#">Prezzi</a>
+                          <a class="nav-link active" aria-current="page" href="index.html">Prodotti</a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link disabled" aria-disabled="true">Disabilitato</a>
+                          <a class="nav-link" href="crea-nuovo-prodotto.html">Nuovo prodotto</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="">Clienti</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link mt-4" href="">Impostazioni</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="">Profilo</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link disabled" aria-disabled="true">Esci</a>
                       </li>
                   </ul>
               </div>
@@ -38,40 +50,40 @@
     </div>    
     <main class="d-flex overflow-hidden">
       <!-- side-bar -->
-      <div class="d-flex flex-column flex-shrink-0 p-3 text-white d-none d-md-block bg-dark min-vh-100">
+      <div class=" col-md-3 col-lg-3 d-flex flex-column flex-shrink-0 p-3 text-white d-none d-md-block bg-dark min-vh-100">
           <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
               <span class="fs-4">Bootsrap Dashboard</span>
           </a>
           <hr>
           <ul class="nav nav-pills flex-column mb-auto">
-              <li class="nav-item">
+              <li>
                   <a href="" class="nav-link text-white" aria-current="page">
                       <i class="fas fa-house d-inline me-2"></i>
-                      Dashboard
+                      <span class="d-none d-md-inline-block">Dashboard</span>
                   </a>
               </li>
               <li>
                   <a href="piani-di-sponsorizzazione.html" class="nav-link text-white">
                       <i class="fa-solid fa-chart-simple d-inline  me-2"></i>
-                      Sponsorizzazione
+                      <span class="d-none d-md-inline-block">Sponsorizzazione</span>
                   </a>
               </li>
               <li>
                   <a href="index.html" class="nav-link text-white active">
                       <i class="fa-solid fa-box-archive d-inline me-2"></i>
-                      Prodotti
+                      <span class="d-none d-md-inline-block">Prodotti</span>
                   </a>
               </li>
               <li>
                   <a href="crea-nuovo-prodotto.html" class="nav-link text-white ">
                       <i class="fa-solid fa-plus d-inline me-2"></i>
-                      Nuovo prodotto
+                      <span class="d-none d-md-inline-block">Nuovo prodotto</span>
                   </a>
               </li>
               <li>
                   <a href="#" class="nav-link text-white">
                       <i class="fa-solid fa-user d-inline me-2"></i>
-                      Clienti
+                      <span class="d-none d-md-inline-block">Clienti</span>
                   </a>
               </li>
           </ul>
@@ -81,21 +93,20 @@
                   <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
                   <strong>mdo</strong>
               </a>
-              <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
-                  <li><a class="dropdown-item" href="#">New project...</a></li>
-                  <li><a class="dropdown-item" href="#">Settings</a></li>
-                  <li><a class="dropdown-item" href="#">Profile</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Sign out</a></li>
+              <ul class="dropdown-menu dropdown-menu-dark text-small shadow border-light" aria-labelledby="dropdownUser1">
+                  <li><a class="dropdown-item" href="#">Impostazioni</a></li>
+                  <li><a class="dropdown-item" href="#">Profilo</a></li>
+                  <li><hr class="dropdown-divider bg-light"></li>
+                  <li><a class="dropdown-item" href="#">Esci</a></li>
               </ul>
           </div>
       </div>
   
       <!-- content -->
-      <div class="col-1 mx-3 flex-grow-1 overflow-y-auto d-flex flex-column">
+      <div class="col-1 mx-4 flex-grow-1 overflow-y-auto d-flex flex-column">
           <!-- product found -->
-          <div class="col-12 d-flex  border-bottom mb-2 py-3 py-md-3"> <!--py3-->
-              <h2>10 prodotti trovati</h2>
+          <div class="col-12 d-flex  border-bottom mb-2 py-3"> <!--py3-->
+              <h1 class="fs-3">10 prodotti trovati</h1>
               <div class="button-container ms-auto">
                   <div class="btn-group" role="group" aria-label="Basic outlined example">
                       <button type="button" class="btn btn-outline-secondary">Esporta</button>
@@ -108,59 +119,88 @@
   
           <!-- list product -->
           <div class="list-content py-2 flex-grow-1">   <!--altezza lista contenitore -->
-              <table class="table overflow-auto ">
-                  <thead>
-                      <tr>
-                          <th scope="col" class="text-left">Nome</th>
-                          <th scope="col" class="text-center">Prezzo</th>
-                          <th scope="col" class="text-center">Stato</th>
-                          <th scope="col" class="text-center">Azioni</th>
-                      </tr>
-                  </thead>
-                  <tbody>
-                      <tr>
-                          <td>
+            <table class="table overflow-auto">
+                <thead>
+                    <tr>
+                        <th scope="col"><span>Nome</span></th>
+                        <th scope="col"><span class="d-none d-sm-block">Prezzo</span></th>
+                        <th scope="col"><span class="d-none d-md-block">Stato</span></th>
+                        <th scope="col" class="text-center"><span>Azione</span></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
                             <div class="d-flex">
-                              <div class="col-1">
-                                  <img src="https://images.samsung.com/is/image/samsung/assets/uk/smartphones/galaxy-s10/sunset/images/galaxy-s10_highlight_kv-type_b_s.jpg?$ORIGIN_JPG$" alt="" width="50" height="50">
-                              </div>
-                              <div class="col-1 flex-grow-1">
-                                  <div class="ms-3">
-                                      <h6>Samsung Galaxy s21</h6>
-                                      <p class="text-secondary">Display amoled, fotocamera ultra wide, batteria a lunga durata</p>
-                                  </div>
-                              </div>
-                          </div>
-                          
-                          </td>
-                          <td>
-                              <span class="text-secondary">799.00€</span>
-                          </td>
-                          <td>
-                              <div class="button-container d-flex">
-                                  <button type="button" class="btn btn-outline-success btn-sm m-1 rounded-circle">
-                                      <i class="fa-solid fa-check"></i>
-                                  </button>
-                              </div>
-                          </td>
-                          <td>
-                              <div class="button-container d-flex">
-                                  <button type="button" class="btn btn-outline-primary btn-sm m-1">
-                                      <i class="fa-solid fa-pencil"></i>
-                                  </button>
-                                  <button type="button" class="btn btn-outline-danger btn-sm m-1">
-                                      <i class="fa-solid fa-trash"></i>
-                                  </button>
-                              </div>
-                          </td>
-                      </tr>  
-                  </tbody>
-              </table>
+                                <div class="col-1">
+                                    <img src="https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW9iaWxlJTIwcGhvbmV8ZW58MHx8MHx8fDA%3D" alt="" class="w-100" style="min-width: 30px;">
+                                </div>
+                                <div class="col-1 flex-grow-1">
+                                    <div class="ms-3">
+                                        <span class="fw-semibold d-block">Samsung Galaxy S21</span>
+                                        <span class="text-secondary d-none d-xl-block">Display AMOLED, fotocamera ultra wide, batteria a lunga durata</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex py-2">
+                                <span class=" text-center d-none d-sm-block">799.00€</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="button-container d-flex justify-content-center">
+                                <button type="button" class="btn btn-outline-success btn-sm m-1 rounded-circle d-none d-md-block">
+                                    <i class="fa-solid fa-check"></i>
+                                </button>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="button-container d-flex justify-content-center">
+                                <button type="button" class="btn btn-outline-primary btn-sm m-1">
+                                    <i class="fa-solid fa-pencil"></i>
+                                </button>
+                                <button type="button" class="btn btn-outline-danger btn-sm m-1" data-toggle="modal" data-target="#confirmationModal">
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>  
+                </tbody>
+            </table>
+            
+
+            <!-- Modal -->
+            <div class="modal fade" id="confirmationModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Conferma Cancellazione</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            Sei sicuro di voler cancellare?
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Annulla</button>
+                            <button type="button" class="btn btn-danger">Cancella</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
           </div>
       </div>     
   </main>
   
 <!-- js code     -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 </html>

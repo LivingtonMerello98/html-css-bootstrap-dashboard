@@ -18,142 +18,160 @@
                   <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarNav">
-                  <ul class="navbar-nav">
-                      <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="#">Casa</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="#">Caratteristiche</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="#">Prezzi</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link disabled" aria-disabled="true">Disabilitato</a>
-                      </li>
-                  </ul>
-              </div>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="piani-di-sponsorizzazione.html">Sponsorizzazione</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Prodotti</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="crea-nuovo-prodotto.html">Nuovo prodotto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Clienti</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mt-4" href="">Impostazioni</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Profilo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Esci</a>
+                    </li>
+                </ul>
+            </div>
           </div>
       </nav>
     </div>    
 
     <main class="d-flex overflow-hidden">
         <!-- side-bar -->
-        <div class="d-flex flex-column flex-shrink-0 p-3 text-white d-none d-md-block bg-dark min-vh-100">
-            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+        <div class=" col-md-3 col-lg-3 d-flex flex-column flex-shrink-0 p-3 text-white d-none d-md-block bg-dark min-vh-100">
+          <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
               <span class="fs-4">Bootsrap Dashboard</span>
-            </a>
-            <hr>
-            <ul class="nav nav-pills flex-column mb-auto">
-              <li class="nav-item">
-                <a href="" class="nav-link text-white" aria-current="page">
-                  <i class="fas fa-house d-inline me-2"></i>
-                  Dashboard
-                </a>
+          </a>
+          <hr>
+          <ul class="nav nav-pills flex-column mb-auto">
+              <li>
+                  <a href="" class="nav-link text-white" aria-current="page">
+                      <i class="fas fa-house d-inline me-2"></i>
+                      <span class="d-none d-md-inline-block">Dashboard</span>
+                  </a>
               </li>
               <li>
-                <a href="piani-di-sponsorizzazione.html" class="nav-link  active text-white">
-                  <i class="fa-solid fa-chart-simple d-inline  me-2"></i>
-                  Sponsorizzazione
-                </a>
+                  <a href="piani-di-sponsorizzazione.html" class="nav-link text-white active">
+                      <i class="fa-solid fa-chart-simple d-inline  me-2"></i>
+                      <span class="d-none d-md-inline-block">Sponsorizzazione</span>
+                  </a>
               </li>
               <li>
-                <a href="index.html" class="nav-link text-white">
-                  <i class="fa-solid fa-box-archive d-inline me-2"></i>
-                  Prodotti
-                </a>
+                  <a href="index.html" class="nav-link text-white">
+                      <i class="fa-solid fa-box-archive d-inline me-2"></i>
+                      <span class="d-none d-md-inline-block">Prodotti</span>
+                  </a>
               </li>
               <li>
-                <a href="crea-nuovo-prodotto.html" class="nav-link text-white"> 
-                  <i class="fa-solid fa-plus d-inline me-2"></i>
-                  Nuovo prodotto
-                </a>
+                  <a href="crea-nuovo-prodotto.html" class="nav-link text-white ">
+                      <i class="fa-solid fa-plus d-inline me-2"></i>
+                      <span class="d-none d-md-inline-block">Nuovo prodotto</span>
+                  </a>
               </li>
               <li>
-                <a href="#" class="nav-link text-white">
-                  <i class="fa-solid fa-user d-inline me-2"></i>
-                  Clienti
-                </a>
+                  <a href="#" class="nav-link text-white">
+                      <i class="fa-solid fa-user d-inline me-2"></i>
+                      <span class="d-none d-md-inline-block">Clienti</span>
+                  </a>
               </li>
-            </ul>
-            <hr>
-            <div class="dropdown">
+          </ul>
+          <hr>
+          <div class="dropdown">
               <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-                <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
-                <strong>mdo</strong>
+                  <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+                  <strong>mdo</strong>
               </a>
-              <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
-                <li><a class="dropdown-item" href="#">New project...</a></li>
-                <li><a class="dropdown-item" href="#">Settings</a></li>
-                <li><a class="dropdown-item" href="#">Profile</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Sign out</a></li>
-              </ul>
+              <ul class="dropdown-menu dropdown-menu-dark text-small shadow border-light" aria-labelledby="dropdownUser1">
+                <li><a class="dropdown-item" href="#">Impostazioni</a></li>
+                <li><a class="dropdown-item" href="#">Profilo</a></li>
+                <li><hr class="dropdown-divider bg-light"></li>
+                <li><a class="dropdown-item" href="#">Esci</a></li>
+            </ul>
             </div>
           </div>
 
           <!-- content -->
-          <div class="col-1 m-5 p-5 bg-body-tertiary
+          <div class="col-1 mx-4 mt-3 rounded p-5 bg-body-tertiary
           flex-grow-1">
 
             <!-- title -->
             <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-              <h1 class="display-6 fw-semibold text-body-emphasis">Trova il piano perfetto per te</h1>
-              <p class="fs-5 text-body-secondary">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.</p>
-              <button type="button" class="btn btn-primary btn-sm">Small button</button>
-              <button type="button" class="btn btn-outline-secondary btn-sm">Small button</button>
+              <h1 class="fs-2 fw-semi-bold text-body-emphasis">Trova il piano perfetto per te</h1>
+              <div class="col d-flex justify-content-center">
+                <div class="col-6">
+                  <p class="fs-6 fw-semibold text-body-secondary">Scegli tra le nostre opzioni di abbonamento e goditi funzionalità esclusive e performance migliori</p>
+                  <span class="fs-5 fw-bold text-body-secondary">Porta la tua esperiena a un livello successivo</span>
+                </div>
+              </div>
+              <div class="button-container mt-3 mb-4">
+                <button type="button" class="btn btn-primary rounded-pill btn-lg">Scopri di più</button>
+                <button type="button" class="btn btn-outline-secondary rounded-pill btn-lg">Contattaci</button>
+              </div>
             </div>
 
             <!-- card -->
             <div class="row">
-              <div class="col-sm-12 col-md-12 col-lg-4">
+              <div class="col-sm-12 col-md-12 col-lg-4 text-center col-xl-4">
                 <div class="card mb-4 rounded-3 shadow-sm">
-                  <div class="card-header py-3">
+                  <div class="card-header py-3 ">
                     <h4 class="my-0 fw-normal">Free</h4>
                   </div>
-                  <div class="card-body">
-                    <h1 class="card-title pricing-card-title">$0<small class="text-body-secondary fw-light">/mo</small></h1>
-                    <ul class="list-unstyled mt-3 mb-4">
-                      <li>10 users included</li>
-                      <li>2 GB of storage</li>
-                      <li>Email support</li>
-                      <li>Help center access</li>
+                  <div class="card-body text-center">
+                    <h1 class="card-title pricing-card-title">&#8364; 0<small class="text-body-secondary fw-light">/mese</small></h1>
+                    <ul class="list-unstyled mt-3 mb-4 fw-semibold text-body-secondary">
+                      <li>10 utenti</li>
+                      <li>2 GB di spazio</li>
+                      <li>Pubblicità</li>
+                      <li>supporto email</li>
                     </ul>
-                    <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
+                    <button type="button" class="w-100 btn btn-lg btn-outline-primary">Prosegui</button>
                   </div>
                 </div>
               </div>
-              <div class="col-sm-12 col-md-12 col-lg-4">
-                <div class="card mb-4 rounded-3 shadow-sm">
-                  <div class="card-header py-3">
-                    <h4 class="my-0 fw-normal">Pro</h4>
-                  </div>
-                  <div class="card-body">
-                    <h1 class="card-title pricing-card-title">$15<small class="text-body-secondary fw-light">/mo</small></h1>
-                    <ul class="list-unstyled mt-3 mb-4">
-                      <li>20 users included</li>
-                      <li>10 GB of storage</li>
-                      <li>Priority email support</li>
-                      <li>Help center access</li>
-                    </ul>
-                    <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-12 col-md-12 col-lg-4">
+              <div class="col-sm-12 col-md-12 col-lg-4 text-center col-xl-4">
                 <div class="card mb-4 rounded-3 shadow-sm border-primary">
                   <div class="card-header py-3 text-bg-primary border-primary">
                     <h4 class="my-0 fw-normal">Enterprise</h4>
                   </div>
                   <div class="card-body">
-                    <h1 class="card-title pricing-card-title">$29<small class="text-body-secondary fw-light">/mo</small></h1>
-                    <ul class="list-unstyled mt-3 mb-4">
-                      <li>30 users included</li>
-                      <li>15 GB of storage</li>
-                      <li>Phone and email support</li>
-                      <li>Help center access</li>
+                    <h1 class="card-title pricing-card-title">&#8364; 15<small class="text-body-secondary fw-light">/mese</small></h1>
+                    <ul class="list-unstyled mt-3 mb-4 fw-semibold text-body-secondary">
+                      <li>50 utenti</li>
+                      <li>10 GB spazio</li>
+                      <li>Senza pubblicità</li>
+                      <li>Supporto via email prioritario</li>
                     </ul>
-                    <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
+                    <button type="button" class="w-100 btn btn-lg btn-primary">Prosegui</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-4 text-center col-xl-4">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                  <div class="card-header py-3">
+                    <h4 class="my-0 fw-normal">Premium</h4>
+                  </div>
+                  <div class="card-body">
+                    <h1 class="card-title pricing-card-title">&#8364; 29<small class="text-body-secondary fw-light">/mese</small></h1>
+                    <ul class="list-unstyled mt-3 mb-4 fw-semibold text-body-secondary">
+                      <li>Utenti illimitai</li>
+                      <li>Spazio illimitato</li>
+                      <li>Senza pubblicità</li>
+                      <li>Supporto via email e chat</li>
+                    </ul>
+                    <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
                   </div>
                 </div>
               </div>
